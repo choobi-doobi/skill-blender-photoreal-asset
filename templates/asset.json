@@ -1,0 +1,31 @@
+{
+  "title": "Rusted fuel barrel",
+  "subject": "a rusted 55-gallon steel fuel barrel standing on concrete",
+  "render_as": "a daylight photograph",
+  "photo_kind": "real steel drums and barrels photographed in daylight",
+  "collection_prefix": "AS_",
+  "hdri": "",
+  "hdri_strength": 1.0,
+  "hdri_rotation_deg": 135.0,
+  "ground": "asphalt",
+  "ground_z": -0.001,
+  "cameras": {
+    "hero": [[1.6, -2.0, 1.1], [0.0, 0.0, 0.45], 50],
+    "side": [[0.0, -2.6, 0.6], [0.0, 0.0, 0.45], 50],
+    "top": [[0.9, -1.1, 1.9], [0.0, 0.0, 0.5], 50],
+    "detail": [[0.55, -0.75, 0.75], [0.1, -0.15, 0.6], 85]
+  },
+  "final": {"res": [1920, 1280], "samples": 256},
+  "preview": {"res": [960, 640], "samples": 64},
+  "layout": "research/layout.py",
+  "ref_dir": "ref",
+  "skip_zone_regex": "",
+  "owner_refs": {
+    "AS_body": ["ref01", "ref02", "ref03", "ref04", "ref05", "ref06"]
+  },
+  "overall_refs": ["ref01", "ref02", "ref03"],
+  "critic_goal": "",
+  "design_note": "",
+  "scope_note": "The scene is one barrel on plain ground under a sky. Don't report the sky, the ground beyond the barrel, or missing surroundings.",
+  "critic": {"runner": "subagent", "model": "inherit", "max_refs": 6, "chunk": 7, "parallel": 4}
+}
